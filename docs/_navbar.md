@@ -1,11 +1,14 @@
 <!-- _navbar.md -->
 
-* 入门
-
-  * [快速开始](zh-cn/quickstart.md)
-  * [多页文档](zh-cn/more-pages.md)
-  * [定制导航栏](zh-cn/custom-navbar.md)
-  * [封面](zh-cn/cover.md)
+* 导航
+    * [🦄首页](zh-cn/)
+    * [🧭指南](zh-cn/guide)
+    * [🍀Git](zh-cn/git)
+    * [🐑Restful](zh-cn/restful)
+    * [🐸Spring](zh-cn/Spring)
+    * [🌸Vue](zh-cn/Vue)
+    * [🤔springCloud](zh-cn/springCloud)
+    * [🐇RabbitMq](zh-cn/RabbitMq)
 
 
 * 配置

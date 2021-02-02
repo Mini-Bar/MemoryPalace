@@ -8,6 +8,7 @@
 
 - 欢迎来到我的世界
 
-[GitHub](https://github.com/Mini-Bar/docsifyMd/)
+[GitHub](https://github.com/Mini-Bar/MemoryPalace/)
 [CSDN](https://blog.csdn.net/qq_42022965/article/details/113136092)
-[开始阅读](minibar/)
+[开始阅读](./)
+
