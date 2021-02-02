@@ -32,6 +32,21 @@
 					'/.*/_sidebar.md': '/_sidebar.md'
 				},
 				plugins: [
+				    function(hook) {
+				      var footer = [
+				        '<hr/>',
+				        '<footer>',
+				        '<span><a href="https://github.com/Mini-Bar/MemoryPalace/">click-me</a> &copy;2021.</span>',
+				        '<span>Proudly published with <a href="https://github.com/Mini-Bar/MemoryPalace/" target="_blank">Mini-Bar</a>.</span>',
+				        '</footer>'
+				      ].join('');
+				
+				      hook.afterEach(function(html) {
+				        return html + footer;
+				      });
+				    }
+				  ]
+				// plugins: [
 					// EditOnGithubPlugin.create(
 					//   'https://github.com/njleonzhang/docsify-edit-on-github/blob/master/'
 					// ),
@@ -46,7 +61,7 @@
 					// 		}
 					// 	}
 					// )
-				]
+				// ]
 			}
 		</script>
 

@@ -7,7 +7,7 @@
     * [🐑Restful](zh-cn/restful)
     * [🐸Spring](zh-cn/Spring)
     * [🌸Vue](zh-cn/Vue)
-    * [🤔springCloud](zh-cn/springCloud)
+    * [☁springCloud](zh-cn/springCloud)
     * [🐇RabbitMq](zh-cn/RabbitMq)
 
 

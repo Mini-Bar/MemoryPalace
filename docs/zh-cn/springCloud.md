@@ -1,6 +1,12 @@
 # 简介
 
+
+
 spring cloud 为开发人员提供了快速构建分布式系统的一些工具，包括**配置管理、服务发现、断路器、路由、微代理、事件总线、全局锁、决策竞选、分布式会话**等等。它运行环境简单，可以在开发人员的电脑上跑。
+
+[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)
+
+
 
 ## 服务注册中心(Eureka)
 
@@ -429,3 +435,150 @@ Hystrix Turbine将每个服务Hystrix Dashboard数据进行了整合。
 
 !> Hystrix Turbine的使用非常简单，只需要引入相应的依赖和加上注解和配置就可以了。
 
+#### service-turbine
+
+引入相应的依赖：
+
+```xml
+ <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
+        </dependency>
+
+    </dependencies>
+```
+
+在其入口类ServiceTurbineApplication加上注解@EnableTurbine，开启turbine，@EnableTurbine注解包含了@EnableDiscoveryClient注解，即开启了注册服务。
+
+配置文件application.yml：
+
+```yaml
+server:
+  port: 8764
+
+spring:
+  application:
+    name: service-turbine
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+
+turbine:
+  app-config: service-hi,service-lucy
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream     
+```
+
+## Nacos
+
+Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。
+
+### 使用Nacos作为服务注册中心注册
+
+**Nacos 的关键特性包括:**
+
+- 服务发现和服务健康监测
+- 动态配置服务，带管理界面，支持丰富的配置维度。
+- 动态 DNS 服务
+- 服务及其元数据管理
+
+Nacos依赖于Java环境，所以必须安装Java环境。然后从官网下载Nacos的解压包，安装稳定版的
+
+下载完成后，解压，在解压后的文件的/bin目录下，windows系统点击startup.cmd就可以启动nacos。linux或mac执行以下命令启动nacos
+
+> ```shell
+> sh startup.sh -m standalone
+> ```
+
+启动成功，在浏览器上访问：http://localhost:8848/nacos 会跳转到登陆界面，默认的登陆用户名为nacos，密码也为nacos。
+
+
+
+!> 在pom文件引入nacos的Spring Cloud起步依赖
+
+!> 在工程的配置文件application.yml做相关的配置
+
+!> 然后在Spring Boot的启动文件`NacosProviderApplication`加上`@EnableDiscoveryClient`注解.
+
+nacos作为服务注册和发现组件时，在进行服务消费，可以选择`RestTemplate`和`Feign`等方式。这和使用Eureka和Consul作为服务注册和发现的组件是一样的，没有什么区别。这是因为spring-cloud-starter-alibaba-nacos-discovery依赖实现了Spring Cloud服务注册和发现的相关接口，可以和其他服务注册发现组件无缝切换。
+
+### 使用Nacos作为配置中心
+
+引入nacos-config的Spring cloud依赖
+
+```xml
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-alibaba-nacos-config</artifactId>
+	<version>0.9.0.RELEASE</version>
+</dependency>
+```
+
+在bootstrap.yml(一定是bootstrap.yml文件，不是application.yml文件)文件配置以下内容：
+
+```yaml
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        prefix: nacos-provider
+  profiles:
+    active: dev
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)[✨](https://www.emojiall.com/zh-hans/emoji/✨)
+
+以上学习自[方志朋的博客](https://www.fangzhipeng.com/)
+
+我也是看到最后一篇才知道他是《深入理解Spring Cloud与微服务构建》的作者！
