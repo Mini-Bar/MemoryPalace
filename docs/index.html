@@ -61,6 +61,11 @@
 				distractionFreeMode: false
 			})
 		</script>
+		<script>
+		  if (typeof navigator.serviceWorker !== 'undefined') {
+		    navigator.serviceWorker.register('sw.js')
+		  }
+		</script>
 		<!-- Docsify v4 -->
 		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
