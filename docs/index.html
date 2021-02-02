@@ -20,8 +20,8 @@
 		</div>
 		<script>
 			window.$docsify = {
-				name: '',
-				repo: '',
+				name: 'minibar',
+				repo: 'https://github.com/Mini-Bar/MemoryPalace/',
 				coverpage: true,
 				loadSidebar: true,
 				loadNavbar: true,
@@ -31,21 +31,44 @@
 					'/.*/_sidebar.md': '/_sidebar.md'
 				},
 				plugins: [
-					EditOnGithubPlugin.create(
-						'https://github.com/njleonzhang/vue-data-tables/blob/master/docs/'
-					)
+					// EditOnGithubPlugin.create(
+					//   'https://github.com/njleonzhang/docsify-edit-on-github/blob/master/'
+					// ),
+					// EditOnGithubPlugin.create(
+					// 	'https://github.com/Mini-Bar/MemoryPalace/tree/main/docs/',
+					// 	null,
+					// 	function(file) {
+					// 		if (file.indexOf('en') === -1) {
+					// 			return '编辑'
+					// 		} else {
+					// 			return 'edit on git'
+					// 		}
+					// 	}
+					// )
 				]
-
 			}
-			const gitalk = new Gitalk({
-				clientID: '2905c4da17cdbdc8bcdf',
-				clientSecret: '904179dc2f054ea2e0384e0e847d6701186acd9f',
-				repo: 'docsifyMd',
-				owner: 'Mini-Bar',
-				admin: ['Mini-Bar'],
-				distractionFreeMode: false
-			})
+			// const gitalk = new Gitalk({
+			// 	clientID: '2905c4da17cdbdc8bcdf',
+			// 	clientSecret: '904179dc2f054ea2e0384e0e847d6701186acd9f',
+			// 	repo: 'MemoryPalace',
+			// 	owner: 'Mini-Bar',
+			// 	admin: ['Mini-Bar'],
+			// 	distractionFreeMode: false
+			// })
 			// gitalk.render('gitalk-container')
+		</script>
+		
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+		<script>
+		  const gitalk = new Gitalk({
+		    clientID: '2905c4da17cdbdc8bcdf',
+		    clientSecret: '904179dc2f054ea2e0384e0e847d6701186acd9f',
+		    repo: 'MemoryPalace',
+		    owner: 'Mini-Bar',
+		    admin: ['Mini-Bar'],
+		    distractionFreeMode: false
+		  })
 		</script>
 		<!-- Docsify v4 -->
 		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -59,6 +82,6 @@
 		<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
 		<script src="//unpkg.com/prismjs/components/prism-java.js"></script>
 		<script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
-		<script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+		<!-- <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script> -->
 	</body>
 </html>
