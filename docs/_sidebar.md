@@ -9,3 +9,5 @@
 * [☁    springCloud](zh-cn/springCloud)
 * [🐇    RabbitMq](zh-cn/RabbitMq)
 * [🍈    JVM](zh-cn/JVM)
+* [🖐    IO](zh-cn/IO)
+* [🖐    Picupload](zh-cn/Picupload)
