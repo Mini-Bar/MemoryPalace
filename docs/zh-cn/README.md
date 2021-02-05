@@ -1,38 +1,27 @@
-## Mini-Bar
+<div><p style="text-align:center;font-size:36px;color:#42b983">夜雨诗意</p></div>
 
-> A magical documentation site generator.
+　　早年为了学写古诗，曾买过一部线装本的《诗韵合壁》，一函共6册，字体很小，内容很多。除了供查诗韵外，它还把各种物象、各种情景、各种心绪分门别类，纂集历代相关诗句，成了一部颇为齐全的诗歌词典。过去文人要应急写诗时，查一直，套一套，很可快速地炮制出几首来。但是毫无疑问，这样写出来的诗都是不值一读的。只有在不带写诗任务时随便翻翻，看看在同一名目下中国诗化语词的多方汇集，才有一点意思。
 
-## What it is
+　　翻来翻去，眼下出现了“夜雨”这一名目，那里的诗大多可读。既然是夜间，各种色相都隐退了，一切色彩斑斓的词汇也就失去了效能;又在下雨，空间十分逼仄，任何壮举豪情都铺展不开，诗句就不能不走向朴实，走向自身，走向情感，李商隐著名的《夜雨寄北》堪称其中典范。
 
-docsify generates your documentation website on the fly. Unlike GitBook, it does not generate static html files. Instead, it smartly loads and parses your Markdown files and displays them as a website. To start using it, all you need to do is create an `index.html` and [deploy it on GitHub Pages](deploy.md).
+　　光听着窗外夜色中时紧时疏的雨声，便满心都会贮足了诗。要说美，也没有什么美，屋外的路泥泞难走，院中的花零落不堪，夜行的旅人浑身湿透。但正是在这种情境下，你会感受到往常的世俗喧嚣一时浇灭，天上人间只剩下了被雨声统一的宁定，被雨声阻隔的寂寥。人人都悄然归位，死心塌地地在雨帘包围中默默端坐。外界的一切全成了想象，夜雨中的想象总是特别专注，特别遥远。
 
-See the [Quick start](quickstart.md) guide for more details.
+　　夜雨款款地剥夺了人的活力，因此夜雨中的想象又格外敏感和畏怯。这种畏怯又与某种安全感拌和在一起，凝聚成对小天地中一脉温情的自享和企盼。在夜雨中与家人围炉闲谈，几乎都不会拌嘴;在夜雨中专心攻读，身心会超常地熨帖;在夜雨中思念友人，会思念到立即寻笔写信;在夜雨中挑灯作文，文字也会变得滋润蕴藉。
 
-## Features
+　　在夜雨中想象最好是对富而立。黯淡的灯光照着密密的雨脚，玻璃窗冰冷冰冷，被你呵出的热气呵成一片迷雾。你能看见的东西很少，却似乎又能看得很远。风不大，轻轻一阵立即转换成渐沥雨声，转换成河中更密的涟漪，转换成路上更稠的泥泞。此时此刻，天她间再也没有什么会干扰这放任自由的风声雨声。你用温热的手指划去窗上的雾气，看见了窗子外层无数晶莹的雨滴。新的雾气又腾上来了，你还是用手指去划，划着划着，终于划出了你思念中的名字。
 
-- No statically built html files
-- Simple and lightweight
-- Smart full-text search plugin
-- Multiple themes
-- Useful plugin API
-- Emoji support
-- Compatible with IE11
-- Support server-side rendering ([example](https://github.com/docsifyjs/docsify-ssr-demo))
+　　夜雨是行旅的大敌。
 
-## Examples
+　　倒不是因为夜间行路艰难，也不是因为没有带着雨鞋和伞。夜雨会使旅行者想家，想得很深很深。夜雨会使旅行者企望安逸，突然憬悟到自己身陷僻远、孤苦的处境，顾影自怜，构成万里豪情的`羁绊。
 
-Check out the [Showcase](https://github.com/docsifyjs/awesome-docsify#showcase) to see docsify in use.
+　　不是急流险滩，不是崇山峻岭，而是夜雨，使无数旅行者顿生反悔，半途而归。我不知道法显、玄奘、郑和、鉴真、徐霞客他们在一次次夜雨中心境如何，依我看，他们最强的意志，是冲出了夜雨的包围。
 
-## Donate
+　　如我无用之辈，常常会在大雨如注的夜晚，躲在乡村旅店里，把地图拿出来细细查看。目光在已经走过的千里之间来回，痴想着其间在夜幕雨帐笼罩下的无数江河和高山。这样的夜晚，我常常失眠。为了把这种没出息的惰怠心绪驱赶，我总会在夜雨中邀几个不相识的旅人长时间闲谈。
 
-Please consider donating if you think docsify is helpful to you or that my work is valuable. I am happy if you can help me [buy a cup of coffee](https://github.com/QingWei-Li/donate). :heart:
+　　但是，真正让心绪复归的，完全不是这种谈话，而是第二天晴朗的早晨。雨后的清晨，铺天盖地奔泻着一种兴奋剂，让人几乎把昨夜忘却;又不能完全忘却，留下一点影子，阴阴凉凉的，添一份淡淡的惆怅。
 
-## Community
+　　在人生的行旅中，夜雨的魅力也深可寻探。
 
-Users and the development team are usually in the [Gitter chat room](https://gitter.im/docsifyjs/Lobby).
+　　我相信，一次又一次，夜雨曾浇媳过突起的野心，夜雨曾平抚过狂躁的胸襟，夜雨曾阻止过一触即发的争斗，夜雨曾破灭过凶险的阴谋。当然，夜雨也所折过壮阔的宏图、勇敢的进发、火烫的情怀。
 
-## Special Thanks
-
-_Vercel_ has given us a Pro account.
-
-<a href="https://vercel.com/?utm_source=docsifyjsdocs" target="_blank"><img src="_media/vercel_logo.svg" width="100px"></a>
+　　不知道历史学家有没有查过，有多少乌云密布的雨夜，悄悄地改变了中国历史的步伐。将军舒眉了，谋士自侮了，君王息怒了，英豪冷静了，侠客止步了，战鼓停息了，骏马回槽了，刀刃入鞘了，奏章中断了，敕令收回了，船楫下锚了，酒气消退了，狂欢消解了，呼吸匀停了，心律平缓了。
