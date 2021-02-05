@@ -1,28 +1,26 @@
 ## Git常用命令
 
-### **Quick setup** — if you’ve done this kind of thing before
+### 🍉**快速开始** — if you’ve done this kind of thing before
 
-[ Set up in Desktop](https://desktop.github.com/)
-
-**or**
-
-HTTPSSSH
+[ Set up in Desktop](https://desktop.github.com/)**or**HTTPSSSH
 
 
 
 Get started by [creating a new file](https://github.com/Mini-Bar/MemoryPalace/new/main) or [uploading an existing file](https://github.com/Mini-Bar/MemoryPalace/upload). We recommend every repository include a [README](https://github.com/Mini-Bar/MemoryPalace/new/main?readme=1), [LICENSE](https://github.com/Mini-Bar/MemoryPalace/new/main?filename=LICENSE.md), and [.gitignore](https://github.com/Mini-Bar/MemoryPalace/new/main?filename=.gitignore).
 
+> 首先创建一个新文件或上传一个现有的文件。我们建议每个存储库都包含自述文件README、许可证LISCENSE和.gitignore。
+
 ### …or create a new repository on the command line
 
 
 
-```
+```shell
 echo "# MemoryPalace" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/Mini-Bar/MemoryPalace.git
+git remote add origin https://github.com/...
 git push -u origin main
 ```
 
@@ -30,7 +28,7 @@ git push -u origin main
 
 
 
-```
+```bash
 git remote add origin https://github.com/Mini-Bar/MemoryPalace.git
 git branch -M main
 git push -u origin main
@@ -38,7 +36,58 @@ git push -u origin main
 
 ### …or import code from another repository
 
-You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+>  You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+>
+> 您可以使用来自Subversion、Mercurial或TFS项目的代码初始化此存储库。
+
+
+
+
+
+#### 备份与还原
+
+![](https://ftp.bmp.ovh/imgs/2021/02/9335d313c93a550e.png)
+
+#### 比较
+
+![](https://ftp.bmp.ovh/imgs/2021/02/ce991602fad5ed74.png)
+
+#### 分支
+
+创建对当前所有的数据产生一个更大“的副本
+
+![](https://ftp.bmp.ovh/imgs/2021/02/74c390f2c83f49b7.png)
+
+### Git优点:
+
+分布式
+
+高效（团队分支
+
+离线工作，服务器压力小
+
+易于合并
+
+![](https://ftp.bmp.ovh/imgs/2021/02/adc39be859cb1ee1.png)
+
+## Git指令
+
+![](https://ftp.bmp.ovh/imgs/2021/02/61dc21e9c830ef36.png)
+
+![](https://ftp.bmp.ovh/imgs/2021/02/39f0cb6a787bfbe5.png)
+
+#### 本地和服务器的搭建
+
+![](https://ftp.bmp.ovh/imgs/2021/02/80c8d48d7b3ce6f5.png)
+
+![](https://ftp.bmp.ovh/imgs/2021/02/99cfbc3b4b7956c6.png)
+
+
+
+
+
+
+
 
 
 
@@ -46,7 +95,7 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 
 在当前目录新建一个git代码库
 
-```sh
+```shell
 git init	
 ```
 

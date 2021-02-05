@@ -11,3 +11,8 @@
 * [🍈    JVM](zh-cn/JVM)
 * [🖐    IO](zh-cn/IO)
 * [🖐    Picupload](zh-cn/Picupload)
+* [🌏   Oracle](zh-cn/Oracle)
+* [➰   RedBlackTree](zh-cn/RedBlackTree)
+* [⭕   Reflection](zh-cn/Reflection)
+* [🌈 ArrayList](zh-cn/Arraylist)
+
